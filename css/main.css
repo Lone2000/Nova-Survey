@@ -11,10 +11,16 @@ body{
   background: #5b8c85;
   color: #ecce6d;
   overflow-x: hidden;
+  
+}
+/* Custom Scroll */
+body::-webkit-scrollbar{
+ width: 0.85em;
 }
 
-body::-webkit-scrollbar{
- width: 0.5em;
+body::-webkit-scrollbar-thumb {
+  background-color: #64bdaf;
+  border-radius: 10px
 }
 
 .l-heading{
