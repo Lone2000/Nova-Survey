@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Survey | Welcome User</title>
+</head>
+<body>
+  <main id="main">
+    <section id="intro">
+      <h1 class="l-heading">Nova Planet Survey Form</h1>
+      <p class="s-intro">Thank you for taking the time to help us improve the platform</p>
+    </section>
+    <form action="">
+      <div class="form-group">
+        <label for="name" class="span">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group" >
+        <label for="email" class="span">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group" >
+        <label for="age" class="span">Age (optional)</label>
+        <input type="number" id="age" min="10" max="100" name="age" placeholder="Age">
+      </div>
+      <div class="form-group">
+        <p class="span" >Which novel genre do you prefer</p>
+        <input type="text" id="drop" placeholder="Select a genre" class="span">
+      </div>
+      <div class="form-group">
+        <p class="span" >Will you recommend this genre to anyone?</p>
+        <label class="span">
+          <input type="radio" name="user-recommend" value="Definitely" class="radio-content">Definitely
+        </label>
+        <label class="span">
+          <input type="radio" name="user-recommend" value="Maybe" class="radio-content">Maybe
+        </label>
+        <label class="span">
+          <input type="radio" name="user-recommend" value="Not Sure" class="radio-content">Not Sure
+        </label>
+      </div>
+      <div class="form-group">
+        <p class="span">Do you prefer Chinese or Korean novels?</p>
+        <label class="span">
+          <input type="checkbox" id="chinese" name="prefer" value="Chinese" class="checkbox-content">Chinese
+        </label>
+        <label class="span">
+          <input type="checkbox" id="korean" name="prefer" value="Korean" class="checkbox-content">Korean
+        </label>
+      </div>
+      <div class="form-group">
+        <textarea name="comment" placeholder="Enter your comments here.." id="comment" cols="30" rows="10"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    
+    </form>
+  </main>
+</body>
+</html>
